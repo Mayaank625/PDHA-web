@@ -102,8 +102,8 @@ function TournamentCard({ tournament }: { tournament: any }) {
           </div>
         </div>
         <div className="mt-auto">
-          <Button asChild className="w-full bg-blue-600 hover:bg-blue-700 text-white transition-colors">
-            <Link href={`/tournaments/${tournament.id}`}>View Details</Link>
+          <Button render={<Link href={`/tournaments/${tournament.id}`} />} className="w-full bg-blue-600 hover:bg-blue-700 text-white transition-colors">
+            View Details
           </Button>
         </div>
       </div>

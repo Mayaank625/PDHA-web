@@ -25,11 +25,11 @@ export default async function Home() {
               {settings?.heroSubtitle || "Fostering excellence, teamwork, and passion for handball across the Pune district."}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Button asChild size="lg" className="bg-orange-500 hover:bg-orange-600 text-white border-none text-base h-12 px-8 rounded-full shadow-lg shadow-orange-500/30 transition-all hover:scale-105">
-                <Link href="/register/player">Register as Player</Link>
+              <Button render={<Link href="/register/player" />} size="lg" className="bg-orange-500 hover:bg-orange-600 text-white border-none text-base h-12 px-8 rounded-full shadow-lg shadow-orange-500/30 transition-all hover:scale-105">
+                Register as Player
               </Button>
-              <Button asChild size="lg" variant="outline" className="bg-white/10 text-white hover:bg-white/20 border-white/20 text-base h-12 px-8 rounded-full backdrop-blur-sm transition-all hover:scale-105">
-                <Link href="/tournaments">View Tournaments</Link>
+              <Button render={<Link href="/tournaments" />} size="lg" variant="outline" className="bg-white/10 text-white hover:bg-white/20 border-white/20 text-base h-12 px-8 rounded-full backdrop-blur-sm transition-all hover:scale-105">
+                View Tournaments
               </Button>
             </div>
           </div>
@@ -65,8 +65,8 @@ export default async function Home() {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Button asChild variant="ghost" className="text-blue-600 hover:text-blue-800 hover:bg-blue-50 font-medium">
-              <Link href="/announcements">View All Announcements</Link>
+            <Button render={<Link href="/announcements" />} variant="ghost" className="text-blue-600 hover:text-blue-800 hover:bg-blue-50 font-medium">
+              View All Announcements
             </Button>
           </div>
         </div>
@@ -101,8 +101,8 @@ export default async function Home() {
                     </div>
                   </div>
                   <div className="mt-auto">
-                    <Button asChild className="w-full bg-blue-600 hover:bg-blue-700 text-white transition-colors">
-                      <Link href={`/tournaments/${i}`}>View Details</Link>
+                    <Button render={<Link href={`/tournaments/${i}`} />} className="w-full bg-blue-600 hover:bg-blue-700 text-white transition-colors">
+                      View Details
                     </Button>
                   </div>
                 </div>
