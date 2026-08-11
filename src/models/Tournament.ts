@@ -6,9 +6,11 @@ export interface ITournament extends Document {
   startDate: Date;
   endDate: Date;
   venue: string;
-  rules: string;
+  rules?: string;
   status: 'Upcoming' | 'Ongoing' | 'Past';
   registrationOpen: boolean;
+  teamsCount: number;
+  bannerUrl?: string;
   createdAt: Date;
 }
 
@@ -18,9 +20,11 @@ const TournamentSchema: Schema = new Schema({
   startDate: { type: Date, required: true },
   endDate: { type: Date, required: true },
   venue: { type: String, required: true },
-  rules: { type: String },
+  rules: { type: String, default: '' },
   status: { type: String, enum: ['Upcoming', 'Ongoing', 'Past'], default: 'Upcoming' },
-  registrationOpen: { type: Boolean, default: false },
+  registrationOpen: { type: Boolean, default: true },
+  teamsCount: { type: Number, default: 0 },
+  bannerUrl: { type: String, default: '' },
   createdAt: { type: Date, default: Date.now },
 });
 
