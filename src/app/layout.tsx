@@ -14,13 +14,13 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Pune District Handball Organisation (PDHO)",
+    default: "Pune District Handball Association (PDHO)",
     template: "%s | PDHO",
   },
-  description: "Official portal of the Pune District Handball Organisation. Find tournaments, register teams, and stay updated with the latest handball news in Pune.",
+  description: "Official portal of the Pune District Handball Association. Find tournaments, register teams, and stay updated with the latest handball news in Pune.",
   openGraph: {
-    title: "Pune District Handball Organisation",
-    description: "Official portal of the Pune District Handball Organisation. Find tournaments, register teams, and stay updated with the latest handball news in Pune.",
+    title: "Pune District Handball Association",
+    description: "Official portal of the Pune District Handball Association. Find tournaments, register teams, and stay updated with the latest handball news in Pune.",
     url: "https://pdho.org",
     siteName: "PDHO",
     locale: "en_IN",
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pune District Handball Organisation",
-    description: "Official portal of the Pune District Handball Organisation. Find tournaments, register teams, and stay updated with the latest handball news in Pune.",
+    title: "Pune District Handball Association",
+    description: "Official portal of the Pune District Handball Association. Find tournaments, register teams, and stay updated with the latest handball news in Pune.",
   },
 };
 

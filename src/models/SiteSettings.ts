@@ -15,9 +15,9 @@ export interface ISiteSettings extends Document {
 }
 
 const SiteSettingsSchema: Schema = new Schema({
-  siteName: { type: String, default: 'Pune District Handball Organisation' },
+  siteName: { type: String, default: 'Pune District Handball Association' },
   logoUrl: { type: String, default: '' },
-  heroTitle: { type: String, default: 'Pune District Handball Organisation' },
+  heroTitle: { type: String, default: 'Pune District Handball Association' },
   heroSubtitle: { type: String, default: 'Fostering excellence, teamwork, and passion for handball across the Pune district.' },
   contactEmail: { type: String, default: 'info@pdho.org' },
   contactPhone: { type: String, default: '+91 98765 43210' },

@@ -19,7 +19,7 @@ export default async function Home() {
               Official Portal
             </Badge>
             <h1 className="text-4xl md:text-6xl font-extrabold text-white tracking-tight">
-              {settings?.heroTitle || "Pune District Handball Organisation"}
+              {settings?.heroTitle || "Pune District Handball Association"}
             </h1>
             <p className="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">
               {settings?.heroSubtitle || "Fostering excellence, teamwork, and passion for handball across the Pune district."}
@@ -55,7 +55,7 @@ export default async function Home() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-slate-600 text-sm line-clamp-3">
-                    The Pune District Handball Organisation is pleased to announce the selection trials for the upcoming State Level U-17 Championship. All interested players must report to...
+                    The Pune District Handball Association is pleased to announce the selection trials for the upcoming State Level U-17 Championship. All interested players must report to...
                   </p>
                   <Link href={`/announcements/${i}`} className="inline-flex items-center mt-4 text-sm font-semibold text-orange-500 hover:text-orange-600 transition-colors">
                     Read More <span className="ml-1">→</span>

@@ -73,7 +73,7 @@ export default function AdminSettingsPage() {
           <h3 className="text-lg font-semibold border-b pb-2">General & Branding</h3>
           <div className="grid gap-4 md:grid-cols-2">
             <div className="space-y-2">
-              <Label>Site Name / Organization Name</Label>
+              <Label>Site Name / Association Name</Label>
               <Input name="siteName" value={formData.siteName} onChange={handleChange} />
             </div>
             <div className="space-y-2">

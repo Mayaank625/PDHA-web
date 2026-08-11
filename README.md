@@ -1,13 +1,13 @@
-# PDHO Platform – Pune District Handball Organisation
+# PDHO Platform – Pune District Handball Association
 
-An elegant, fully-featured management and public portal for the **Pune District Handball Organisation (PDHO)**. Built as a high-performance, responsive web application using Next.js, Tailwind CSS, Base UI, MongoDB, and NextAuth.
+An elegant, fully-featured management and public portal for the **Pune District Handball Association (PDHO)**. Built as a high-performance, responsive web application using Next.js, Tailwind CSS, Base UI, MongoDB, and NextAuth.
 
 ---
 
 ## 🌟 Core Features
 
 ### 1. Public Portal
-* **Dynamic Homepage**: Features customizable organization branding, dynamic hero headers, real-time announcements, and highlight sections for featured tournaments.
+* **Dynamic Homepage**: Features customizable association branding, dynamic hero headers, real-time announcements, and highlight sections for featured tournaments.
 * **Player & Team Registration**: Fully validated, user-friendly registration forms with robust client-side validation (using React Hook Form and Zod) for:
   * **Individual Players**: Age, gender, position, and contact details.
   * **Teams**: Category, manager details, and contact credentials.
@@ -20,7 +20,7 @@ An elegant, fully-featured management and public portal for the **Pune District 
 Secure, role-based access dashboard allowing authorized personnel (`Admin` or `SuperAdmin`) to manage the platform:
 * **Registrations Management**: Live view of pending registrations where admins can review, filter, and approve/reject player and team applications.
 * **Tournament Manager**: Complete CRUD dashboard to create, update, and manage handball tournaments.
-* **Site Settings Dashboard**: Dynamically update organization details, contact information, logos, and custom Hero banners without writing code.
+* **Site Settings Dashboard**: Dynamically update association details, contact information, logos, and custom Hero banners without writing code.
 
 ---
 

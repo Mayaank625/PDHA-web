@@ -13,7 +13,7 @@ export default function AdminDashboardPage() {
     <div className="space-y-8">
       <div>
         <h2 className="text-2xl font-bold tracking-tight text-slate-900">Dashboard Overview</h2>
-        <p className="text-slate-500">Welcome back. Here is what is happening across the organisation today.</p>
+        <p className="text-slate-500">Welcome back. Here is what is happening across the association today.</p>
       </div>
 
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">

@@ -21,7 +21,7 @@ export default async function AboutPage() {
             <div className="space-y-6">
               <h2 className="text-3xl font-bold text-slate-900">Our History</h2>
               <p className="text-slate-600 leading-relaxed whitespace-pre-wrap">
-                {settings?.aboutHistory || "The Pune District Handball Organisation was founded with a single goal: to promote the sport of handball at the grassroots level."}
+                {settings?.aboutHistory || "The Pune District Handball Association was founded with a single goal: to promote the sport of handball at the grassroots level."}
               </p>
             </div>
             <div className="h-80 bg-slate-100 rounded-2xl border flex items-center justify-center relative overflow-hidden">

@@ -40,7 +40,7 @@ export async function Footer() {
         </div>
       </div>
       <div className="container mt-12 pt-8 border-t text-center text-sm text-slate-500">
-        <p>&copy; {new Date().getFullYear()} {settings?.siteName || "Pune District Handball Organisation"}. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} {settings?.siteName || "Pune District Handball Association"}. All rights reserved.</p>
       </div>
     </footer>
   );

@@ -8,7 +8,7 @@ export default function AnnouncementsPage() {
       title: "Upcoming Selection Trials for U-17",
       date: "Oct 15, 2023",
       type: "Notice",
-      content: "The Pune District Handball Organisation is pleased to announce the selection trials for the upcoming State Level U-17 Championship. All interested players must report to the Shiv Chhatrapati Sports Complex at 8:00 AM sharp with their original age proof documents."
+      content: "The Pune District Handball Association is pleased to announce the selection trials for the upcoming State Level U-17 Championship. All interested players must report to the Shiv Chhatrapati Sports Complex at 8:00 AM sharp with their original age proof documents."
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ export default function AnnouncementsPage() {
       <section className="bg-white py-12 border-b">
         <div className="container px-4 md:px-6">
           <h1 className="text-3xl font-bold text-slate-900">Announcements & Notices</h1>
-          <p className="text-slate-600 mt-2">Latest updates from the Pune District Handball Organisation.</p>
+          <p className="text-slate-600 mt-2">Latest updates from the Pune District Handball Association.</p>
         </div>
       </section>
 
