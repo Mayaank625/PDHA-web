@@ -523,7 +523,9 @@ export default function AdminTournamentsPage() {
                   <Label className="text-xs">Status</Label>
                   <Select
                     value={formData.status}
-                    onValueChange={(val: TournamentStatus) => setFormData({ ...formData, status: val })}
+                    onValueChange={(val) => {
+                      if (val) setFormData({ ...formData, status: val as TournamentStatus });
+                    }}
                   >
                     <SelectTrigger className="bg-white">
                       <SelectValue />
@@ -638,7 +640,9 @@ export default function AdminTournamentsPage() {
                   <Label className="text-xs">Status</Label>
                   <Select
                     value={formData.status}
-                    onValueChange={(val: TournamentStatus) => setFormData({ ...formData, status: val })}
+                    onValueChange={(val) => {
+                      if (val) setFormData({ ...formData, status: val as TournamentStatus });
+                    }}
                   >
                     <SelectTrigger className="bg-white">
                       <SelectValue />

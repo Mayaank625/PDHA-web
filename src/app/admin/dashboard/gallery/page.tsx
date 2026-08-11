@@ -402,7 +402,9 @@ export default function AdminGalleryPage() {
                   <Label>Category</Label>
                   <Select
                     value={formData.category}
-                    onValueChange={(val) => setFormData({ ...formData, category: val })}
+                    onValueChange={(val) => {
+                      if (val) setFormData({ ...formData, category: val });
+                    }}
                   >
                     <SelectTrigger>
                       <SelectValue />
@@ -421,7 +423,9 @@ export default function AdminGalleryPage() {
                   <Label>Media Type</Label>
                   <Select
                     value={formData.mediaType}
-                    onValueChange={(val: "Image" | "Video") => setFormData({ ...formData, mediaType: val })}
+                    onValueChange={(val) => {
+                      if (val) setFormData({ ...formData, mediaType: val as "Image" | "Video" });
+                    }}
                   >
                     <SelectTrigger>
                       <SelectValue />

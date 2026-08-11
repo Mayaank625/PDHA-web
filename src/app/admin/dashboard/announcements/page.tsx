@@ -305,7 +305,9 @@ export default function AdminAnnouncementsPage() {
                 <Label>Type</Label>
                 <Select
                   value={formData.type}
-                  onValueChange={(val: "News" | "Notice" | "Event") => setFormData({ ...formData, type: val })}
+                  onValueChange={(val) => {
+                    if (val) setFormData({ ...formData, type: val as "News" | "Notice" | "Event" });
+                  }}
                 >
                   <SelectTrigger>
                     <SelectValue />

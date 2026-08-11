@@ -521,7 +521,9 @@ export default function AdminMatchesPage() {
                   <Label className="text-xs">Status</Label>
                   <Select
                     value={formData.status}
-                    onValueChange={(val: MatchStatus) => setFormData({ ...formData, status: val })}
+                    onValueChange={(val) => {
+                      if (val) setFormData({ ...formData, status: val as MatchStatus });
+                    }}
                   >
                     <SelectTrigger className="bg-white">
                       <SelectValue />
@@ -619,7 +621,9 @@ export default function AdminMatchesPage() {
                     <Label className="text-xs">Status</Label>
                     <Select
                       value={formData.status}
-                      onValueChange={(val: MatchStatus) => setFormData({ ...formData, status: val })}
+                      onValueChange={(val) => {
+                        if (val) setFormData({ ...formData, status: val as MatchStatus });
+                      }}
                     >
                       <SelectTrigger className="bg-white">
                         <SelectValue />
