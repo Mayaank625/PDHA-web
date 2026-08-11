@@ -9,7 +9,7 @@ export interface IPlayer extends Document {
   email: string;
   district: string;
   position: string;
-  registrationStatus: 'Pending' | 'Approved';
+  registrationStatus: 'Pending' | 'Approved' | 'Rejected';
   createdAt: Date;
 }
 
@@ -22,7 +22,7 @@ const PlayerSchema: Schema = new Schema({
   email: { type: String, required: true },
   district: { type: String, required: true },
   position: { type: String, required: true },
-  registrationStatus: { type: String, enum: ['Pending', 'Approved'], default: 'Pending' },
+  registrationStatus: { type: String, enum: ['Pending', 'Approved', 'Rejected'], default: 'Pending' },
   createdAt: { type: Date, default: Date.now },
 });
 

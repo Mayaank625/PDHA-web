@@ -16,6 +16,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { registerPlayer } from "@/lib/actions/register";
+import { toast } from "sonner";
 
 const playerSchema = z.object({
   fullName: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -56,9 +57,15 @@ export default function PlayerRegistrationPage() {
     
     if (result.success) {
       setSuccessMessage(result.message);
+      toast.success("Player Registration Submitted!", {
+        description: "Your registration is now pending review by PDHA administrators.",
+      });
       form.reset();
     } else {
       setErrorMessage(result.message);
+      toast.error("Registration Failed", {
+        description: result.message,
+      });
     }
     
     setIsSubmitting(false);

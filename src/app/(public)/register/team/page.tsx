@@ -16,6 +16,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { registerTeam } from "@/lib/actions/register";
+import { toast } from "sonner";
 
 const teamSchema = z.object({
   name: z.string().min(2, { message: "Team name must be at least 2 characters." }),
@@ -50,9 +51,15 @@ export default function TeamRegistrationPage() {
     
     if (result.success) {
       setSuccessMessage(result.message);
+      toast.success("Team Registration Submitted!", {
+        description: "Your team registration is now pending review by PDHA administrators.",
+      });
       form.reset();
     } else {
       setErrorMessage(result.message);
+      toast.error("Registration Failed", {
+        description: result.message,
+      });
     }
     
     setIsSubmitting(false);
